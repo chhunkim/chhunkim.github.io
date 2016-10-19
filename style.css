@@ -1,0 +1,116 @@
+header, nav, div, footer{
+  display: block;
+}
+
+body{
+  /* Set the minimum width so it cannot go smaller than 540px */
+  min-width: 540px;
+  background-color: #0469b1;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+div{
+  background: rgba(255, 255, 255, .5);
+  padding: 5px;
+}
+
+img {
+    float: right;
+    min-width: 50px;
+    max-width: 150px;
+    border: 2px solid black;
+    height: auto;
+}
+
+#wrapper{
+  /* Use background-image to insert the image*/
+  background-image: url("AngkorWat.jpg");
+  /* Set background to no-repeat so there is no repeat images in the background*/
+  background-repeat: no-repeat;
+  /* Set background to center*/
+  background-position: center;
+  /* without setting attachment to "fixed", the background will not be fitted the screen.*/
+  background-attachment: fixed;
+  /* Set size to "cover" so that the size of background is fitted in the full page*/
+  background-size: cover;
+}
+
+#wrapper header{
+  font-family: "Apple Chancery", cursive;
+  font-size: 120%;
+  text-align: left;
+  padding-left: 40px;
+}
+
+#wrapper nav ul{
+  list-style-type: none;
+  display: inline-flex;
+}
+
+#wrapper li a {
+    font-size: 110%;
+    font-weight: bolder;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding-right: 29px;
+    color: black;
+}
+
+#wrapper a:hover, a.on{
+  color: green;
+}
+
+#about{
+  text-align: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  min-width: 225px;
+}
+
+#about p{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.comp2040{
+  padding-left: 50px;
+}
+
+.comp2040 li {
+  list-style-image: url("marker.png");
+  padding-bottom: 5px;
+}
+
+.comp2040 a {
+  text-decoration: none;
+  color: black;
+}
+
+.comp4610{
+  padding-left: 50px;
+}
+
+.comp4610 li {
+  list-style-image: url("marker.png");
+  padding-bottom: 5px;
+}
+
+.comp4610 a {
+  text-decoration: none;
+  color: black;
+}
+
+footer{
+  font-size: 90%;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a:hover, a.on{
+  color: green;
+}
