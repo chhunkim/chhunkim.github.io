@@ -1,0 +1,60 @@
+head, body{
+  display: block;
+}
+
+body{
+  font-size: 80%;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.15em;
+  background-color: white;
+  text-align: center;
+}
+
+#page{
+  max-width: 940px;
+  min-width: 720px;
+  border: double;
+  margin: auto;
+  margin-top: 10px;
+  padding: 30px;
+}
+
+#logo{
+  margin-bottom: 10px;
+}
+
+div p{
+  margin: auto;
+  width: 600px;
+}
+
+img{
+  max-width: 100%;
+  margin: auto;
+}
+
+div ul{
+    padding: 5px;
+    display: inline-flex;
+  	list-style-type: none;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+li{
+  margin: auto;
+}
+
+li a {
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 29px;
+    padding-right: 29px;
+}
+
+a:hover, a.on{
+  color: red;
+}
