@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+	<!--File: /~ckim/public_html/index.html
+		COMP4610 GUI Programming I Assignment: Createing Your First Web Page
+		Chhun Kim, UMASS Lowell Computer Science, chhun_kim@student.uml.edu
+		Copyright (c) 2016 by Chhun Kim. All rights reserved.
+		May be freely copied or excerpted for educational purposes with credit to the author.
+		Updated by CK on 09/12/2016	-->
+ <html>
+  <head>
+    <!--style tag is a very important piece of code to make the background with an image.-->
+    <style>
+      body {
+        /* Use background-image to insert the image*/
+        background-image: url("AngkorWat.jpg");
+        /* Set background to no-repeat so there is no repeat images in the background*/
+        background-repeat: no-repeat;
+        /* Set background to center*/
+        background-position: center;
+        /* without setting attachment to "fixed", the background will not be fitted the screen.*/
+        background-attachment: fixed;
+        /* Set size to "cover" so that the size of background is fitted in the full page*/
+        background-size: cover;
+      }
+    </style>
+    
+    <!-- title tag is the name of the tab on the brower -->
+    <title>
+      CK Computer Science
+    </title>
+  </head>
+  
+  <body>
+    <!-- A welcome message to the webpage -->
+    <h1 style = "text-align:center; font-style:bold;">
+          ***Hello, World! You Are in Chhun Kim CS Webpage***
+    </h1>
+    <!-- This shows the paragraph in the first block.-->
+    <div style="text-align:center; background: rgba(255, 255, 255, .5); padding-bottom: 10px;">
+      <p style="text-align:center;"> 
+		<br/> 
+		My name is <b> Chhun Kim </b>, a Computer Science student at UMASS Lowell. 
+		<br/><br/>  <!-- breakline makes the text looks better.-->
+		Email@ <strong>chhun_kim@student.uml.edu</strong> 
+		<br/>
+	  </p>
+	  
+	  <p style="text-align:left;"> <!-- A short description about the Web page.-->
+		This web page is designed to fullfil the requirements for the Assignment 1 in GUI Programming I class.
+		The web page allows readers to access all my works done in the Fall 2015 in the Computing IV class, 
+		taught by Prof. Jesse Heines. In the content, there are some links directing to a html file showing 
+		couple assignments generated in Doxygen 1.8.10. <br/>
+	  </p>
+    </div>
+	
+	<div style="text-align:left; background: rgba(255, 255, 255, .5); padding-bottom: 10px;">
+		<h3 style = "text-align:left; font-style:bold;"> 			<br/>
+			<ins>COMP 2040: Computing IV by Prof. Jesse Heines</ins>
+		</h3> 
+		<ul>  
+			<!-- Doxygen Assignment 4 link-->
+			<li> 
+				<a href="http://www.cs.uml.edu/~ckim/Doxygen/Doxygen_Assn4/html/"> Doxygen Assignment 4 </a>
+			</li>
+			<!-- Doxygen Assignment 5 link-->
+			<li> 
+				<a href="http://www.cs.uml.edu/~ckim/Doxygen/Doxygen_Assn5/html/"> Doxygen Assignment 5 </a>
+			</li>
+			<!-- Doxygen Assignment 6 link-->
+			<li> 
+				<a href="http://www.cs.uml.edu/~ckim/Doxygen/Doxygen_Assn6/Doxygen/"> Doxygen Assignment 6 </a>
+			</li>
+			<!-- Doxygen Assignment 7 link-->
+			<li> 
+				<a href="http://www.cs.uml.edu/~ckim/Doxygen/Doxygen_Assn7/Doxygen/"> Doxygen Assignment 7 </a>
+			</li>
+		</ul>
+	</div>
+  </body>
+</html>
