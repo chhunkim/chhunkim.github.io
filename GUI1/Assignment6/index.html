@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--File: /~ckim/GUI1/Assignment6/index.html
+  COMP4610 GUI Programming I Assignment: Createing an Interactive Dynamic Table
+  Chhun Kim, UMASS Lowell Computer Science, chhun_kim@student.uml.edu
+  Copyright (c) 2016 by Chhun Kim. All rights reserved.
+  May be freely copied or excerpted for educational purposes with credit to the author.
+	Created by CK on 10/30/2016 
+	-->
+
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dynamic Table</title>
+  </head>
+	
+	<body>		
+		<div id="form">
+			<header>
+				<h1>Hello, World! Welcome to Interactive Dynamic Table</h1>
+			</header>
+			<h4>Please fill in the boxes with the requirement below:</h4>
+			<ul>
+				<li>All input must be a positive integer</li>
+				<li>The maximum integer must be greater than the minimum</li>
+			</ul>
+			
+			<form>
+				<div id="error"></div>
+				The Number of Columns:<br><br>
+				From <input id="minCol" placeholder="Min Column" type="text" name="min" value>
+				to <input id="maxCol" placeholder="Max Column" type="text" name="max" value><br><br>
+				
+				The Number of Rows:<br><br>
+				From <input id="minRow" placeholder="Min Row" type="text" name="min" value> 
+				to <input id="maxRow" placeholder="Max Row" type="text" name="max" value><br><br>
+				
+				<input type="button" value="Submit" onclick="createTable();"> 
+			</form>
+			
+			<!-- Output in table -->
+			<table id='myTable'>
+				<!-- for debugging purpose
+ 				<p id="output1"><br></p>
+				<p id="output2"><br></p>
+				<p id="output3"><br></p>
+				<p id="output4"><br></p>-->
+			</table>
+		</div>
+		
+		<div class="validator">
+	    <ul>
+		    <li>
+		      <a href="https://jigsaw.w3.org/css-validator/validator?uri=www.cs.uml.edu%2F%7Eckim%2FGUI1%2FAssignment6%2F&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">
+		        CSS Validator</a>
+		    </li>
+		    <li>
+          <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.cs.uml.edu%2F%7Eckim%2FGUI1%2FAssignment6%2F">
+            HTML Validator</a>
+		    </li>
+	    </ul>
+	  </div>
+		
+		<!-- Footer-->
+    <footer>
+      Copyright &copy; 2016 Chhun Kim. All rights reserved.
+    </footer>
+		
+		<script type="text/javascript" src="js/Assignment6.js"></script>
+	</body>
+</html>
