@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--File: /~ckim/GUI1/Assignment7/index.html
+  COMP4610 GUI Programming I Assignment: Using the jQuery Validation Plugin with Dynamic Table
+  Chhun Kim, UMASS Lowell Computer Science, chhun_kim@student.uml.edu
+  Copyright (c) 2016 by Chhun Kim. All rights reserved.
+  May be freely copied or excerpted for educational purposes with credit to the author.
+    Created by CK on 11/13/2016
+    -->
+
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+		<!-- stylesheet for this assignment -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title bar -->
+		<title>Interactive Dynamic Table</title>
+  </head>
+
+  <body>
+		<!-- the input form ffo users to fill in the create a table -->
+    <div id="form">
+      <form id="tableForm">
+        <header>
+          <h1>Hello, World! Welcome to Interactive Dynamic Table</h1>
+        </header>
+        <h4>Please fill in the boxes with the requirement below:</h4>
+        <ul><!-- instrution for filling the table -->
+          <li>All input must be a number between -50 to 50.</li>
+          <li>The maximum integer must be greater than the minimum</li>
+        </ul>
+				<!-- Columns fields -->
+        The Number of Columns:<br><br>
+        Min Columns <input type="text" name="minCol" id="minCol" placeholder="Min Column" value="" ><br><br>
+        Max Columns <input type="text" name="maxCol" id="maxCol" placeholder="Max Column" value="" ><br><br>
+				<!-- Rows fields -->
+        The Number of Rows:<br><br>
+        Min Rows <input type="text" name="minRow" id="minRow" placeholder="Min Row" value="" ><br><br>
+        Max Rows <input type="text" name="maxRow" id="maxRow" placeholder="Max Row" value="" ><br><br>
+				<!-- Submit Button -->
+        <input id="submit" type="submit" value="Submit"/> 
+      </form>
+
+      <!-- Output in table -->
+      <div id="myTable">
+      <!-- for debugging purpose
+        <p id="output1"><br></p>
+        <p id="output2"><br></p>
+        <p id="output3"><br></p>
+				<p id="output4"><br></p>-->
+      </div>
+    </div>
+		<!-- Validator of HTML and CSS -->
+    <div class="validator">
+      <ul>
+        <li>
+					<a href="https://jigsaw.w3.org/css-validator/validator?uri=www.cs.uml.edu%2F%7Eckim%2FGUI1%2FAssignment6%2F&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">CSS Validator</a>
+        </li>
+        <li>
+          <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.cs.uml.edu%2F%7Eckim%2FGUI1%2FAssignment6%2F">HTML Validator</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Footer-->
+    <footer id="footer">
+       Copyright &copy; 2016 Chhun Kim. All rights reserved.
+    </footer>
+
+    <!-- jQuery Plugins -->
+		<script src="js/jquery-3.1.1.min.js"></script>      
+		<script src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/Assignment7.js"></script>
+  </body>
+</html>
