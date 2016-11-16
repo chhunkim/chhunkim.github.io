@@ -1,3 +1,12 @@
+/***** 
+	File: /~ckim/GUI1/Assignment7/css/style.css
+  COMP4610 GUI Programming I Assignment: Using the jQuery Validation Plugin with Dynamic Table
+  Chhun Kim, UMASS Lowell Computer Science, chhun_kim@student.uml.edu
+  Copyright (c) 2016 by Chhun Kim. All rights reserved.
+  May be freely copied or excerpted for educational purposes with credit to the author.
+		Created by CK on 11/14/2016 
+	*****/
+
 header, form, div, footer{
   display: block;
 }

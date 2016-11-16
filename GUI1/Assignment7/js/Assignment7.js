@@ -1,16 +1,18 @@
-/*File: /~ckim/GUI1/Assignment7/js/Assignment7.js
+/******
+	File: /~ckim/GUI1/Assignment7/js/Assignment7.js
   COMP4610 GUI Programming I Assignment: Using the jQuery Validation Plugin with Dynamic Table
   Chhun Kim, UMASS Lowell Computer Science, chhun_kim@student.uml.edu
   Copyright (c) 2016 by Chhun Kim. All rights reserved.
   May be freely copied or excerpted for educational purposes with credit to the author.
-	Created by CK on 11/14/2016*/
+		Created by CK on 11/14/2016 
+		Updated by CK on 11/16/2016
+	*****/
 
 // Reference sites: https://jqueryvalidation.org/validate/
-// 					https://www.sitepoint.com/basic-jquery-form-validation-tutorial/
+// 									https://www.sitepoint.com/basic-jquery-form-validation-tutorial/
 
 // validate function is to handle user's inputs.
 $().ready(function() {
-	//
   // Valid function to check the input is smaller or grader based on the source example
   // Source: http://jsfiddle.net/tUPQc/2/
   // Function to check greater which is use in rules for validate
@@ -37,10 +39,12 @@ $().ready(function() {
 			return parseInt(value) < parseInt($max.val());
 	}, " Min must be smaller than max"); 
     
+	// Function to validate all inputs entered by the users	
 	$('#tableForm').validate({
 		// below is the rules for validating a form,
 		// to make sure user typing the correct inputs
 		rules: {
+			// Minimum Column
 			minCol: {
 				number: true,
 				min: -50,
@@ -48,6 +52,7 @@ $().ready(function() {
         lessThan: "#maxCol",
 				required: true
 			},
+			// Maximum Column
 			maxCol: {
 				number: true,
 				min:-50,
@@ -55,18 +60,20 @@ $().ready(function() {
         greaterThan: "#minCol",
 				required:true
 			},
+			// Minimum Row
 			minRow:{
 				number: true,
 				min:-50,
 				max:50,
-        lessThan: "maxRow",
+        lessThan: "#maxRow",
 				required:true
 			},
+			// Maximum Row
 			maxRow:{
 				number: true,
 				min:-50,
 				max:50,
-        greaterThan: "minRow",
+        greaterThan: "#minRow",
 				required:true
 			}
 		},
@@ -110,6 +117,7 @@ $().ready(function() {
     // submitHandler is a function call createTable function to 
     // drawing the table
     submitHandler: function(){
+			// calling createTable() to implement the table
       createTable();
       return false;
     }
@@ -132,7 +140,7 @@ function createTable(){
 	//rMax = document.getElementById("maxRow").value;
   var rMax = parseInt($('input[name=maxRow]').val());
 
-	  // Check to see if the numbers are read correctly.
+	// Check to see if the numbers are read correctly.
   console.log("minCol: ", cMin, "maxCol: ", cMax),
   console.log("minRow: ", rMin, "maxRow: ", rMax);
 	
@@ -155,15 +163,14 @@ function createTable(){
 			}
 			else{
 				tableOutput += ((Number(checkColor) % 2 == 0) ? "<td class='child-blink'>" : "<td class='color'>") + ((row + rMin - 1) * (col + cMin - 1)) + "</td>";  
-				checkColor++; // increase this
+				checkColor++; // increment the checkColor
 			}
 		}
 		row % 2 == 0 ? checkColor = 0 : checkColor = 1;
 		tableOutput += "</tr>"; // closing tag for the row
 	}
 	tableOutput += "</table>";// closing tag for the table
-		
-  $("#table").html(tableOutput);
+  $("#myTable").html(tableOutput);// Outputing the table
   return false;
 }
 
