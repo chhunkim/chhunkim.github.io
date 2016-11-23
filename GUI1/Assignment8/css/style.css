@@ -1,0 +1,114 @@
+/***** 
+	File: /~ckim/GUI1/Assignment8/css/style.css
+  COMP4610 GUI Programming I Assignment: Using the jQuery UI Slider and Tab Widgets
+  Chhun Kim, UMASS Lowell Computer Science, chhun_kim@student.uml.edu
+  Copyright (c) 2016 by Chhun Kim. All rights reserved.
+  May be freely copied or excerpted for educational purposes with credit to the author.
+	This Assignment is buldling up from Assginment 6 and 7;
+		Created by CK on 11/14/2016 
+		Updated by CK on 11/22/2016
+	*****/
+
+header, form, div, footer{
+  display: block;
+}
+
+/* body with a blue background  */
+body{
+	min-width: 540px;
+	margin-left: 5%;
+	margin-right: 5%;
+	background: #0469b1;
+}
+
+/* form has a skyblue color with dashed border */ 
+#form{
+	overflow: auto;
+	border: 3px dashed black;
+	background-color: rgba(255, 255, 255, .5);
+	padding: 2%;
+}
+
+/* tabs*/
+#tabs{
+	margin-top: 10px;
+	overflow: auto;
+}
+
+/* maximum width of each cell of the table */
+#myTable{
+	max-width:5%;
+	empty-cells: hide;
+}
+
+/* centered the header */ 
+header{
+	text-align: center;
+}
+
+/* for the "Plesae fill in the boxes with the requirement below:" text */
+h4{
+	margin-left: 10px;
+}
+
+/* for the blink cell will have no color */
+td.child-blink{
+	text-align: center;
+	background-color: rgba(222, 255, 97, .5);
+	border: 2px solid black;
+	padding: 10px;
+	width: 15px;
+	height: 15px;
+	font-size: 13pt;
+}
+
+/* for the tbale header */
+td.header{
+	text-align: center;
+	border: 2px solid black;
+	padding: 10px;
+	width: 15px;
+	height: 15px;
+	font-size: 13pt;
+	background-color: white;
+	color: black;
+}
+
+/* coloring cell */
+td.color{
+	text-align: center;
+	border: 2px solid black;
+	background-color: rgba(255, 255, 255, .5);
+	padding: 10px;
+	width: 15px;
+	height: 15px;
+	font-size: 13pt;
+}
+
+.error{
+	color: red;
+	font-weight: bolder;
+	font-style: italic;
+}
+
+/* padding the form */
+form{
+	padding: 20px;
+}
+
+/* validator ul */
+.validator{
+		color: white;
+}
+
+/* footer */
+footer{
+	color: white;
+	font-size: 90%;
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
