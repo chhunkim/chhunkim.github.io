@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+	File: /~ckim/GUI1/Assignment9/index.html
+  COMP4610 GUI Programming I Assignment: Implementing a Bit of Scrabble with Drag-and-Drop
+  Chhun Kim, UMASS Lowell Computer Science, chhun_kim@student.uml.edu
+  Copyright (c) 2016 by Chhun Kim. All rights reserved.
+  May be freely copied or excerpted for educational purposes with credit to the author.
+    Created by CK on 12/02/2016
+    Updated by CK on 12/04/2016
+		Updated by CK on 12/05/2016
+  -->
+
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <!-- stylesheet for this assignment -->
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title bar -->
+    <title>Scrabble Board</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <!-- Header for the title of the page-->
+      <header>
+        <h1><br>***Hello, World! Welcome to Scrabble Board***<br><br></h1>
+      </header>
+			
+			<div id="Tiles">
+			</div>
+			
+      <!-- Generate the scrabble board -->
+      <div id="scrabbleBoard">
+			</div>
+    </div>
+      
+    <!-- Validator of HTML and CSS -->
+    <div class="validator">
+      <ul>
+        <!-- Validator of CSS -->
+        <li>
+          <!-- There are 13 errors during the validator of CSS becasue the jQuery UI -->
+          <a href="https://jigsaw.w3.org/css-validator/validator?uri=www.cs.uml.edu%2F~ckim%2FGUI1%2FAssignment8&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">CSS Validator</a>
+        </li>
+        <!-- Validator of HTML -->
+        <li>
+          <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.cs.uml.edu%2F~ckim%2FGUI1%2FAssignment8%2F">HTML Validator</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Footer-->
+    <footer id="footer">
+      Copyright &copy; 2016 Chhun Kim. All rights reserved.
+    </footer>
+
+		     
+    <!-- jQuery Plugins -->
+    <!-- Notice that jquery-3.1.1.min.js has to be placed before jquery.validate.js 
+				 because some of function has to be implemented from jquery-3.1.1.min.js -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>      
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
+		<script type="text/javascript" src="js/Scrabble_Pieces_AssociativeArray_Jesse.js"></script>
+		<script type="text/javascript" src="js/DragAndDrop.js"></script>
+    <script type="text/javascript" src="js/Board.js"></script>
+		<script type="text/javascript" src="js/Tiles.js"></script>
+		<script type="text/javascript" src="js/Assignment9.js"></script>
+		
+  </body>
+</html>

@@ -1,108 +1,132 @@
+/***** 
+	File: /~ckim/GUI1/Assignment3/HW3_source/pacific.css
+  COMP4610 GUI Programming I Assignment: Using the jQuery Validation Plugin with Dynamic Table
+  Chhun Kim, UMASS Lowell Computer Science, chhun_kim@student.uml.edu
+  Copyright (c) 2016 by Chhun Kim. All rights reserved.
+  May be freely copied or excerpted for educational purposes with credit to the author.
+		Created by CK on 11/14/2016 
+	*****/
+
 header, hgroup, nav, footer, figure, figcaption, aside, section, article {
 	display: block;
 }
 
+/* body */
 body {
-	background-color: black;
+	background-color: #00569f;
 	background-attachment: fixed;
 	background-image: url("ptrbackground.jpg");
-	color: #666666;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+/* h1 */
 h1 {
 	background-position: right;
 	background-repeat: no-repeat; 
 	background-image: url("sunset.jpg"); 
-	background-color: #000032;
+	background-color: #000033;
 	margin-bottom: 0;
 	color: white;
 	padding: 15px;
 }
 h1,
+/* h2 */
 h2 {
 	font-family: Georgia, "Times New Roman", serif;
 }
 
+/* wrapper */
 #wrapper {
-	background-color: #90C8E3;
-	max-width: 80%;
+	background-color: #99ccff;
+	width: 80%;
+	min-width: 600px;
 	margin: auto;
 }
 
-
+/* nav */
 #wrapper nav {
-
-	float: left;
-	background-color: #90C8E3;
+	padding-left: 10px;
 	float: left;
 	font-weight: bold;
-	width: 200px;
 	height: 100%
 }
 
+/* ul */
 #wrapper nav ul {
 	list-style-type: none;
 	font-size: 1em;
-	padding-left: 20px;
+	padding-left: 10px;
 }
 
+/* nav a */
 #wrapper nav a {
+	color: #000033;
 	text-decoration: none;
 }
 
+/* nav a visited */
 #wrapper nav a:visited {
 	color: #344873;
 }  
+
+/* nav a hover */
 #wrapper nav a:hover {
 	color: #FFFFFF;
 }
 
+/* content */
 #content {
 	overflow: hidden;
 	padding-top: 10px;
+	margin-left: 160px;
 	background-color: white;
 }
 
+/* h2 */
 h2 {
-	padding-left: 20px;
+	padding-left: 30px;
 	color: #3399CC;
 }
 
+/* span */
 span{
+	color: #5C7FA0;
 	font-weight: bold;
 }
 
+/* p */
 p{
-	margin-left: 20px;
+	margin-left: 30px;
 }
+
+/* img */
 img{
-	display: block;
 	float: left;
 	max-width: 100%;
 	height: auto;
-	padding-left: 20px;
+	padding-left: 30px;
 	margin-right: 20px;
 }
 
+/* content ul li */
 #content ul  li{
 	list-style-position: inside;
 	list-style-image: url("marker.gif");
 }
 
+/* contact */
 #contact {
-	padding-left: 20px;
 	font-size: 90%;
+	padding-left:30px;
 }
 
+/* footer */
 footer {
 	font-size: 70%;
 	font-style: italic;
-	margin-left: 200px;
 	background-color: white;
 	font-family: Georgia, "Times New Roman", serif;
-	padding-left: 20px;
-	padding-bottom:10px;
-	padding-top: 5%;
+	padding: 30px;
+	margin-left: 160px;
 }
 
