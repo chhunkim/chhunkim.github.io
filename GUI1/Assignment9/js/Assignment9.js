@@ -9,21 +9,37 @@
 		Updated by CK on 11/16/2016
 		Updated by CK on 11/22/2016
 		Updated by CK on 12/04/2016
+		
+	Note that: I work with Chong Vu, and we are agreed to let me use most of his code.
 	*****/
 
 function playingGame(){
 	// call the Board function to generate the board
 	Board();
+	// reset so it display the remaining letter table as a start
+	resetButton();
 	// call the Tiles function to generate tiles
 	Tiles();
 	// call Droppable function
 	DragAndDrop();
-	
 }
 	
 $().ready(function(){
 	// Execute playingGame funciton to load the game
 	playingGame();
+	
+	// shuffle tiles button
+	$("#shuffle").click (function() {
+		shuffleTiles();
+		DragAndDrop();
+	});
+	
+	// reset game button
+	$("#reset").click(function(){
+		resetButton(); // reset button function is allowed users to reset the game
+		DragAndDrop(); // Drag and Drop function is allowed users to drag and drop tiles
+	});
+	
 	
 	
 	
@@ -53,6 +69,20 @@ function findWord( word ) {
 
     // Otherwise, it isn't in the dictionary.
   return "_____";
+}
+
+// After the user hits the reset button 
+// it will refresh the game to where it started
+function resetButton(){
+	// initialized letter to get back all the letters
+	var letters = "_ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	for(var i = 0; i < letters.length; i++){
+		ScrabbleTiles[letters[i]].numberRemaining = ScrabbleTiles[letters[i]].originalDistribution;
+	}
+	word_score = 0;
+	Board();
+	Tiles();
+	UpdateRemainWord();
 }
 
 /* For Assignment 8

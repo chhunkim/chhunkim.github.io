@@ -29,8 +29,29 @@
         <h1><br>***Hello, World! Welcome to Scrabble Board***<br><br></h1>
       </header>
 			
+			<!-- Generate the tiles-->
 			<div id="Tiles">
 			</div>
+			
+			<!-- Reset Game Button and Shuffle Tiles -->
+			<div id="buttons">
+				<br>
+				<input type="submit" id="reset" value="RESET"> <!-- Reset game button-->
+				<input type="submit" id="shuffle" value="SHUFFLE TILES"> <!-- shuffle tiles button-->
+				<input type="submit" id="clearBoard" value="CLEAR BOARD"> <!-- clear board button-->
+			</div>
+			
+			<!-- Score board and check the words on the board-->
+			<div id="score">
+				<br>
+				<div class="score">Score: <span id="score"></span></div> <!-- Score Board-->
+				<br>
+				<div class="endTurn"><input type="submit" id="endturn" value="END TURN"></div> <!-- End Turn button -->
+				<br>
+			</div>
+			
+			<!-- Remaining Letter Bag Table-->
+			<div id="bagtiles"></div>
 			
       <!-- Generate the scrabble board -->
       <div id="scrabbleBoard">
@@ -68,6 +89,7 @@
 		<script type="text/javascript" src="js/DragAndDrop.js"></script>
     <script type="text/javascript" src="js/Board.js"></script>
 		<script type="text/javascript" src="js/Tiles.js"></script>
+		<script type="text/javascript" src="js/RemainWord.js"></script>
 		<script type="text/javascript" src="js/Assignment9.js"></script>
 		
   </body>

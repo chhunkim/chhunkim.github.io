@@ -1,30 +1,55 @@
 
 var Rack = [];
+var letters = "_ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-// Tiles function is to give the 7 letters on the rack for playing the scrabble game
+// Tiles function is to give the 7 letterss on the rack for playing the scrabble game
 function Tiles(){
 	var tile = "";
-	var letter = "_ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	tile += '<table id="TilesRack"><tr>';
 	for (var i=0; i < 7; i++){
 		// http://stackoverflow.com/questions/5915096/get-random-item-from-javascript-array
-		// generate random letter from the letter
-		var index = Math.floor(Math.random() * letter.length);
+		// generate random letters from the letters
+		var index = Math.floor(Math.random() * letters.length);
 		
-		// loop the letter array to see if there is anything letter left
-		while(ScrabbleTiles[letter[index]].number_remaining === 0 ){
-			index = Math.floor(Math.random() * letter.length);
+		// loop the letters array to see if there is anything letters left
+		while(ScrabbleTiles[letters[index]].numberRemaining === 0 ){
+			index = Math.floor(Math.random() * letters.length);
 		}
-		// Get letters link
-		var urlLetter = "images/Scrabble_Tile_" + letter[index] + ".jpg";
-		tile += "<td><img id='tile_drag_" + i + "' class='board_piece_" + letter[index] + "' src='" + urlLetter + "'></img></td>";
+		// Get letterss link
+		var urlletters = "images/Scrabble_Tile_" + letters[index] + ".jpg";
+		tile += "<td><img id='tile_drag_" + i + "' class='board_piece_" + letters[index] + "' src='" + urlletters + "'></img></td>";
 		
-		ScrabbleTiles[letter[index]].number_remaining = ScrabbleTiles[letter[index]].number_remaining - 1;
+		ScrabbleTiles[letters[index]].numberRemaining = ScrabbleTiles[letters[index]].numberRemaining - 1;
 		
-		Rack.push({"Letter": letter[index], "id" : "dragTile_" + i, "value" : ScrabbleTiles[letter[index]].value})
+		Rack.push({"letters": letters[index], "id" : "dragTile_" + i, "value" : ScrabbleTiles[letters[index]].value})
 	}
 	tile += '</tr></table>';
 	//$("#score").html(score);
 	$("#Tiles").html(tile);
+	// call UpdateRemainWord that we know how many tiles we have 
+	// at the start
+	UpdateRemainWord();
+}
+
+// shuffle tiles function is generated after the user hits the shuffle button
+// to get different tiels on the rack 
+function shuffleTiles(){
+	// initialized the rack tiles ID
+	var rackID = $("#scrabbleBoard").find('td');
+	rackID.each(function() {
+		if($(this)[0].id == "dropped"){
+			$(this)[0].innerHTML = "";
+			removeDroppedID();
+		}
+	});
 	
+	// for (var i = 0; i < Rack.length; i++){
+        // // var lettr = Rack[i].Letter;
+        // ScrabbleTiles[Rack[i].Letter].numberRemaining =  ScrabbleTiles[Rack[i].Letter].numberRemaining + 1;
+  // }
+	
+	// Rack = [];
+	UpdateRemainWord();
+	Tiles();
+	DragAndDrop();	
 }

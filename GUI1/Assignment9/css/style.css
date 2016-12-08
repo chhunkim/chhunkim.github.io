@@ -28,17 +28,22 @@ header{
 	text-align: center;
 }
 
-/* Tile Rack */
-img{
-	padding: 5px;
-	min-width: 34px;
-	max-width: 54px;
-	max-height: 50px;
+.main{
+	margin: auto;
+}
+
+tr{
+	min-height: 56px;
+	max-width: 870px;
+	height: 64px;
 }
 
 /* text for td tag */
 td{
 	font-weight: bold;
+	width: 64px;
+	height:64px;
+	margin: auto;
 }
 
 /* for the double words cell */
@@ -46,10 +51,6 @@ td.regular{
 	text-align: center;
 	background: grey;
 	border: 2px solid black;
-	padding: 10px;
-	min-width: 34px;
-	max-width: 64px;
-	max-height: 64px;
 	font-size: 10pt;
 }
 
@@ -59,9 +60,6 @@ td.start{
 	text-align: center;
 	background-color: white;
 	border: 2px solid black;
-	padding: 10px;
-	max-width: 64px;
-	max-height: 64px;
 	font-size: 9pt;
 }
 
@@ -70,9 +68,6 @@ td.wTriple{
 	text-align: center;
 	background-color: rgba(222, 255, 97, .5);
 	border: 2px solid black;
-	padding: 10px;
-	max-width: 64px;
-	max-height: 64px;
 	font-size: 10pt;
 }
 
@@ -81,9 +76,6 @@ td.wDouble{
 	text-align: center;
 	background-color: yellow;
 	border: 2px solid black;
-	padding: 10px;
-	max-width: 64px;
-	max-height: 64px;
 	font-size: 10pt;
 }
 
@@ -93,9 +85,6 @@ td.lTriple{
 	text-align: center;
 	background-color: Orange;
 	border: 2px solid black;
-	padding: 10px;
-	max-width: 64px;
-	max-height: 64px;
 	font-size: 10pt;
 }
 
@@ -104,10 +93,14 @@ td.lDouble{
 	text-align: center;
 	background-color: red;
 	border: 2px solid black;
-	padding: 10px;
-	max-width: 64px;
-	max-height: 64px;
 	font-size: 10pt;
+}
+
+/* Tile Rack */
+img{
+	min-width: 34px;
+	max-width: 54px;
+	max-height: 50px;
 }
 
 /* validator ul */
