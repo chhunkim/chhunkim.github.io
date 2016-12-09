@@ -43,12 +43,12 @@ function shuffleTiles(){
 		}
 	});
 	
-	for (var i = 0; i < Rack.length; i++){
-        var lettr = Rack[i].Letter;
-        ScrabbleTiles[lettr].numberRemaining += 1;
-  }
+	// for (var i = 0; i < Rack.length; i++){
+        // var lettr = Rack[i].Letter;
+        // ScrabbleTiles[lettr].numberRemaining += 1;
+  // }
 	
-	Rack = [];
+	// Rack = [];
 	UpdateRemainWord();
 	Tiles();
 	DragAndDrop();	
