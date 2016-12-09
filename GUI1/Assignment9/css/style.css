@@ -1,0 +1,121 @@
+/***** 
+	File: /~ckim/GUI1/Assignment8/css/style.css
+  COMP4610 GUI Programming I Assignment: Using the jQuery UI Slider and Tab Widgets
+  Chhun Kim, UMASS Lowell Computer Science, chhun_kim@student.uml.edu
+  Copyright (c) 2016 by Chhun Kim. All rights reserved.
+  May be freely copied or excerpted for educational purposes with credit to the author.
+	This Assignment is buldling up from Assginment 6, 7, and 8;
+		Created by CK on 11/14/2016 
+		Updated by CK on 11/22/2016
+		Updated by CK on 12/04/2016
+		Updated by CK on 12/06/2016
+	*****/
+
+header, form, div, footer{
+  display: block;
+}
+
+/* body with a blue background  */
+body{
+	min-width: 870px;
+	margin-left: 5%;
+	margin-right: 5%;
+	background: #0469b1;
+}
+
+/* centered the header */ 
+header{
+	text-align: center;
+}
+
+.main{
+	margin: auto;
+}
+
+tr{
+	min-height: 56px;
+	max-width: 870px;
+	height: 64px;
+}
+
+/* text for td tag */
+td{
+	font-weight: bold;
+	width: 64px;
+	height:64px;
+	margin: auto;
+}
+
+/* for the double words cell */
+td.regular{
+	text-align: center;
+	background: grey;
+	border: 2px solid black;
+	font-size: 10pt;
+}
+
+/* for the start position cell */
+td.start{
+	color: red;
+	text-align: center;
+	background-color: white;
+	border: 2px solid black;
+	font-size: 9pt;
+}
+
+/* for the triple word cells */
+td.wTriple{
+	text-align: center;
+	background-color: rgba(222, 255, 97, .5);
+	border: 2px solid black;
+	font-size: 10pt;
+}
+
+/* for the double word cells */
+td.wDouble{
+	text-align: center;
+	background-color: yellow;
+	border: 2px solid black;
+	font-size: 10pt;
+}
+
+/* for the triple letter cells */
+/* for the double words cell */
+td.lTriple{
+	text-align: center;
+	background-color: Orange;
+	border: 2px solid black;
+	font-size: 10pt;
+}
+
+/* for the double letter cells */
+td.lDouble{
+	text-align: center;
+	background-color: red;
+	border: 2px solid black;
+	font-size: 10pt;
+}
+
+/* Tile Rack */
+img{
+	min-width: 34px;
+	max-width: 54px;
+	max-height: 50px;
+}
+
+/* validator ul */
+.validator{
+		color: white;
+}
+
+/* footer */
+footer{
+	color: white;
+	font-size: 90%;
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
