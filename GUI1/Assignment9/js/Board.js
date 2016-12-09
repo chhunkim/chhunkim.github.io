@@ -11,10 +11,11 @@
 	This  is creditted to Chong Vu
 ******/
 
-var table = ""; // initialized table variable
 // the board function is to generate the entired board
 function Board(){
+	var table = ""; // initialized table variable
 	$("#scrabbleBoard").html(table);
+	table += '<table id="singleLine">';
 	
 	table += '<tr><td class="wTriple regular">3x<br>Word</td>';
 	table += '<td class="regular"></td>';
@@ -30,9 +31,8 @@ function Board(){
 	table += '<td class="lDouble regular">2x<br>Letter</td>';
 	table += '<td class="regular"></td>';
 	table += '<td class="regular"></td>';
-	table += '<td class="wTriple regular">3x<br>Word</td>';
+	table += '<td class="wTriple regular">3x<br>Word</td></tr>';
 	/* for the full board
-	table += '<table>';
 	var c = 1;
 	while(c <= 8){
 		rowsOfBoard(c);
@@ -45,22 +45,21 @@ function Board(){
 	}*/
 	table += '</table>';
 	$("#scrabbleBoard").html(table);
-	
 	table= "";
 	
-	var rowID = $("#scrabbleBoard").find('td');
-	var size = rowID.length;
-	var row = 1;
-	var col = 1;
-	rowID.each(function(){
-		var chr = row.toString() + "-" + col.toString();
-		$(this).addClass(chr);
-		if (col == 15){
-			row++;
-			col = 0;
-		}
-		col++;
-	});
+	// var rowID = $("#scrabbleBoard").find('td');
+	// var size = rowID.length;
+	// var row = 1;
+	// var col = 1;
+	// rowID.each(function(){
+		// var chr = row.toString() + "-" + col.toString();
+		// $(this).addClass(chr);
+		// if (col == 15){
+			// row++;
+			// col = 0;
+		// }
+		// col++;
+	// });
 }
 
 /* For the full Board

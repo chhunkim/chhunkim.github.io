@@ -43,13 +43,38 @@ function shuffleTiles(){
 		}
 	});
 	
-	// for (var i = 0; i < Rack.length; i++){
-        // // var lettr = Rack[i].Letter;
-        // ScrabbleTiles[Rack[i].Letter].numberRemaining =  ScrabbleTiles[Rack[i].Letter].numberRemaining + 1;
-  // }
+	for (var i = 0; i < Rack.length; i++){
+        var lettr = Rack[i].Letter;
+        ScrabbleTiles[lettr].numberRemaining += 1;
+  }
 	
-	// Rack = [];
+	Rack = [];
 	UpdateRemainWord();
 	Tiles();
 	DragAndDrop();	
+}
+
+function returnTilesToRack(){
+	var  rid = $("#scrabbleBoard").find('td');
+	rid.each(function() {
+			if (String($(this)[0].id) === "dropped"){
+					$(this).removeAttr('id');
+					$(this)[0].firstChild.outerHTML = "";
+			}
+	});
+
+	var tile = "";
+	tile += '<table id="TilesRack"><tr>';
+	var j = 0;
+	rid = $("#Tiles").find('td');
+	for ( var i = 0; i < rid.length; i++){
+			if (i < Rack.length) {
+					tile += "<td>" + Rack[j].Link + "</td>";
+					j++;
+			} else {
+					tile += "<td></td>";
+			}
+	}    
+	tile += '</tr></table>';
+	$("#Tiles").html(tile);
 }

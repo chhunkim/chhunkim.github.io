@@ -40,9 +40,18 @@ $().ready(function(){
 		DragAndDrop(); // Drag and Drop function is allowed users to drag and drop tiles
 	});
 	
+	// clear board button
+	$("#clear").click(function(){
+		Board();
+		word_length = 0;
+		DragAndDrop();
+	});
 	
-	
-	
+	$("#returnTiles").click(function(){
+		returnTilesToRack();
+		DragAndDrop();
+	});	
+
 });
  
 // Do a jQuery Ajax request for the text dictionary
