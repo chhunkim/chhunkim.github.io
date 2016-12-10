@@ -1,0 +1,207 @@
+/***** 
+	File: /~ckim/GUI1/Assignment8/css/style.css
+  COMP4610 GUI Programming I Assignment: Using the jQuery UI Slider and Tab Widgets
+  Chhun Kim, UMASS Lowell Computer Science, chhun_kim@student.uml.edu
+  Copyright (c) 2016 by Chhun Kim. All rights reserved.
+  May be freely copied or excerpted for educational purposes with credit to the author.
+	This Assignment is buldling up from Assginment 6, 7, and 8;
+		Created by CK on 11/14/2016 
+		Updated by CK on 11/22/2016
+		Updated by CK on 12/04/2016
+		Updated by CK on 12/06/2016
+		Updated by CK on 12/08/2016
+		Updated by CK on 12/09/2016
+	*****/
+
+header, form, div, footer{
+  display: block;
+}
+
+/* body with a blue background  */
+body{
+	position: relative;
+	min-width: 870px;
+	margin-left: 15%;
+	margin-right: 15%;
+	background: #0469b1;
+}
+
+/* centered the header */ 
+header{
+	margin-top: 5%;
+	text-align: center;
+}
+
+/* h1 head for the welcome message*/
+h1{
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 5px dashed black;
+	color: rgba(222, 255, 97, .5);
+}
+
+/* Tiles Rack*/
+#Tiles{
+	margin-top: 5%;
+}
+
+/* Reset Button*/
+#reset{
+	width: 180px;
+	height: 40px;
+	border: 2px solid black;
+}
+
+/* Shuffle Button*/
+#shuffle{
+	width: 180px;
+	height: 40px;
+	border: 2px solid black;
+}
+
+/* Clear Button*/
+#clear{
+	width: 180px;
+	height: 40px;
+	border: 2px solid black;
+}
+
+/* Return Tiles to Rack Button*/
+#returnTiles{
+	width: 180px;
+	height: 40px;
+	border: 2px solid black;
+}
+
+/* End Turn Button*/
+#endturn{
+	border: 2px solid black;
+	width: 180px;
+	height: 40px;
+}
+
+/* Score */
+.scoreClass{
+	font-size: 20pt;
+	font-weight: bold;
+	color: white;
+}
+
+/* Main panel*/
+.main{
+	position: relative;
+	max-width: 1062px;
+	display: center;
+	margin: auto;
+}
+
+/* Remainging word table*/
+table.remainword{
+	margin: auto;
+	border: 2px dashed black;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+/* Remaining word cell*/
+.RWord{
+	border: 2px solid black;
+	padding: 3px;
+	text-align: center;
+}
+
+/* bagtiles which is the remaining word panel*/
+div#bagtiles{
+	display: block;
+	margin-bottom: 50px;
+	text-align: center;
+	position: relative;
+}
+
+/* each row of any table*/
+tr{
+	min-height: 56px;
+	max-width: 870px;
+	height: 64px;
+}
+
+/* text for td tag */
+td{
+	font-weight: bold;
+	width: 64px;
+	height:64px;
+	margin: auto;
+}
+
+/* for the double words cell */
+td.regular{
+	text-align: center;
+	background: grey;
+	border: 2px solid black;
+	font-size: 10pt;
+}
+
+/* for the start position cell */
+td.start{
+	color: red;
+	text-align: center;
+	background-color: white;
+	border: 2px solid black;
+	font-size: 9pt;
+}
+
+/* for the triple word cells */
+td.wTriple{
+	text-align: center;
+	background-color: rgba(222, 255, 97, .5);
+	border: 2px solid black;
+	font-size: 10pt;
+}
+
+/* for the double word cells */
+td.wDouble{
+	text-align: center;
+	background-color: yellow;
+	border: 2px solid black;
+	font-size: 10pt;
+}
+
+/* for the triple letter cells */
+/* for the double words cell */
+td.lTriple{
+	text-align: center;
+	background-color: Orange;
+	border: 2px solid black;
+	font-size: 10pt;
+}
+
+/* for the double letter cells */
+td.lDouble{
+	text-align: center;
+	background-color: red;
+	border: 2px solid black;
+	font-size: 10pt;
+}
+
+/* Tile Rack */
+img{
+	min-width: 34px;
+	max-width: 54px;
+	max-height: 50px;
+}
+
+/* validator ul */
+.validator{
+		color: white;
+}
+
+/* footer */
+footer{
+	color: white;
+	font-size: 90%;
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
